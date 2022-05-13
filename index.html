@@ -9,52 +9,72 @@
     <!--JVS TITOLO-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <script type="text/javascript" src="./jvscpt-3.js"></script>
-    <link rel = "text/javascript" href = "./jvscpt-2.js"/>
-    <link rel = "stylesheet" href = "./json-1.json"/>
-  
-    <!--immagine piccone--> 
+    <link rel = "text/javascript" href = "./jvscpt-1.js"/>
+    <link rel = "stylesheet" href = "./sfondo_1.scss"/>
+
 
     <style>
         #pr {
-            
-            text-shadow: 5px 5px 8px rgb(255, 255, 255);
-            text-shadow: 2px 3px 2px rgb(177, 177, 177);
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            text-shadow: 2px 2px 5px rgb(155, 155, 155);
             text-align: center;
         }
+
+        body {
+        background-color: #202023;
+        background-size: 70% 400%;
+        background-repeat: no-repeat;
+        color:#cccccc;
+      }
     </style>
 
-    <div class = "boxtesto" id = "pr">
-        <div style = "text-align: center; font-family: Poppins; font-size: 45px; margin-top: 80px;" id = "app" class = "module.exports">
-            <script type = "text/javascript" src = "./jvscpt-1.js" class = "testo"></script>
+
+    <div class="container demo">
+        <div class="content">
+            <div id="large-header" class="large-header">
+                <canvas id="demo-canvas"></canvas>
+                <h1 class="main-title"><span class="thin">Sito dei</span> PICCONI</h1>
+            </div>
         </div>
     </div>
 
+    <div id = "pr" style = "font-family: -apple-system-footnote;">
+        <div style = "text-align: center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 45px; margin-top: 80px;" id = "app" class = "module.exports">
+            <script type = "text/javascript" src = "./jvscpt-1.js"></script>
+        </div>
+    </div>
+
+    <div class="loading-container" style = "margin-top: -140px;">
+        <img src="./piccone_3.jpg" id="loading-image">
+    </div>
+      
+
+    <!--
     <div class = "boxtesto" style = "margin-top: 300px;">
         <div id = "span1" align = "center">
             <ul>
                 <li class = "dropdown">
-                    <form action = "./index.2.html" class = "testo">
-                        <center>
-                            <button type = "submit" class = "bottone" id = "pulsante" style = "font-size: 24px; text-align: center; font-weight: 40px; font-family: Poppins;" align = "center"></button>
-                        </center>
+                    <form action = "./index.2.html">
+                        <button type="button" class = "bottone" id = "pulsante" align = "center"></button>
                     </form>
                 </li>
             </ul>
         </div>
     </div>
 
-    <div class = "boxtesto" style = "font-size: 24px; text-align: center; font-weight: 20px; font-family: Poppins; margin-top: 370px; right: -350px;">
-        <p class = "testo">
-            ←clicca sul Piccone Sacro•
+    <div class = "boxtesto" style = "pointer-events:none; font-size: 24px; text-align: center; font-weight: 20px; font-family: Poppins; margin-top: 370px; right: -350px;">
+        <p>
+            ← clicca sul Piccone Sacro•
         </p>
     </div>
+    -->
 
-    <div class = "boxtesto" style = "margin-top: 600px;">
+    <div class = "table">
         <center>
             <table>
-                <caption style = "text-align: center; margin-bottom: 22px; font-family: Poppins; font-size: 26px;">LISTA COMANDI 3IA</caption>
+                <caption class = "listaCommand">LISTA COMANDI 3IA</caption>
                 <div align = "left">
-                    <tbody style = "font-size: 21px; text-align: left;" class = "testo">
+                    <tbody style = "font-size: 21px; text-align: left;">
                         <tr><th>Chi è stato?</th>                         <td>Cassola ovviamente</td> </tr>
                         <tr><th>Chi ha riso?</th>                         <td>Cassola ovviamente</td> </tr>
                         <tr><th>Pregate conpicconauti </th>               <td>"Lalippa c' cred /o nun c' credi?"</td> </tr>
@@ -64,45 +84,54 @@
                         <tr><th>Se si parla di Apostolippa...</th>        <td>amore cortese...</td></tr>
                         <tr><th>Jumpscare: "Muuuuti"!</th>                <td>hihihihi..muutii</td></tr>
                         <tr><th>Lunedì: </th>                             <td>Tira fuori il Divino Piccone</td></tr>
+                        <tr><th>"→Domani vi ...</th>                      <td>"Interrogo,"</td></tr>
+                        <tr><th>"vi metto il ... "</th>                   <td>"Piccone, "</td></tr>
+                        <tr><th>"e vi faccio ..."</th>                    <td>"Piangere, ovviamente."</td></tr>
                     </tbody>
                 </div>
             </table>
         </center>
-
-        <!--footer con il piccone-->
-        <footer class = "testo">
-            ciao
-        </footer>
     </div>
 
-        <svg class = "boxtesto">
-            <filter id="glow">
-                <feGaussianBlur stdDeviation="2"/>
-              <feComposite in2="SourceGraphic"
-                           operator="out" result="glow" />
-              <feFlood flood-color="white" flood-opacity="0.2" />
-              <feComposite in2="SourceGraphic"
-                           operator="atop" result="light" />
-              <feComposite in="glow" in2="light" />    
-            </filter>
-            <pattern id="p" patternUnits="userSpaceOnUse"
-                     width="180px" height="120px"
-                     patternTransform="scale(1,0.8660254)">
-             <g filter="url(#glow)">
-                <g class="wrapper">
-                  <path id="hex" pathLength="388.5"
-                        d="M-30,-60 30,-60 60,0
-                                30,60 -30,60 -60,0Z"
-                        transform="scale(0.935)" />
-                </g>
-                <use xlink:href="#hex" x="0" y="+120" />
-                <use xlink:href="#hex" x="+90" y="+60" />
-                <use xlink:href="#hex" x="+180" y="0" />
-                <use xlink:href="#hex" x="+180" y="120" />
-              </g>
-            </pattern>
-            <rect fill="url(#p)" width="100%" height="100%"/>
-        </svg>
-      </div>
+    <!--footer con il piccone-->
+    <style>
+        #footer {
+          background-color:black;
+          text-align:center;
+          padding:5px;
+          font-size: 12px;
+          margin-top: 45px;
+          margin-left: 0px;
+          color:white;
+          max-width: 2160px;
+          max-height: 40px;
+        @media only screen and (max-width:620px) {
+            /*smartphone*/
+            .options, .main, .course {
+            width:100%;
+            }
+        }   
+    }
+    </style>
+
+    <div id = "app" style = "text-align: center; margin-top: 185px;">
+        <center>
+            <h3 style = "font:bolder; color:#fafafa; font-family:-apple-system, BlinkMacSystemFont; font-size: 18px;">
+                Slide:
+            </h3>
+
+            <iframe src="https://onedrive.live.com/embed?cid=EF543BEEE53A42F9&amp;resid=EF543BEEE53A42F9%21210&amp;authkey=ANAeMmVtcS1Q0P4&amp;em=2&amp;wdAr=1.7777777777777777" width="1488px" height="825px" frameborder="0">
+                Documento di <a target="_blank" href="https://office.com">Microsoft Office</a> incorporato, con tecnologia 
+                <a target="_blank" href="https://office.com/webapps">Office</a>
+            </iframe>
+        </center>
+    </div>
+
+    <br><br>
+
+    <center>
+        <div id="footer">© 2022-ZIPPO107. My rights are all mine</div>
+    </center>
+
     </body>
 </html>
