@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
     <head>
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0, align-content: center">
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
     </head>
 
+    <style>
+        @font-face {
+            font-family: "San Francisco";
+            font-weight: 400;
+            src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+        }
+    </style>
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel = "stylesheet" href = "./css-1.css"/>
     <!--JVS TITOLO-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
@@ -12,126 +23,210 @@
     <link rel = "text/javascript" href = "./jvscpt-1.js"/>
     <link rel = "stylesheet" href = "./sfondo_1.scss"/>
 
-
     <style>
         #pr {
-            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
             text-shadow: 2px 2px 5px rgb(155, 155, 155);
             text-align: center;
         }
 
         body {
-        background-color: #202023;
-        background-size: 70% 400%;
-        background-repeat: no-repeat;
-        color:#cccccc;
-      }
+            background-color: #202023;
+            background-size: 70% 400%;
+            background-repeat: no-repeat;
+            color:#cccccc;
+        }
+        
+        .titolo1{
+            text-align: center;
+            font-size: 45px;
+            text-rendering: optimizeLegibility;
+        }
     </style>
 
-
-    <div class="container demo">
+    <div id="container demo">
         <div class="content">
             <div id="large-header" class="large-header">
                 <canvas id="demo-canvas"></canvas>
-                <h1 class="main-title"><span class="thin">Sito dei</span> PICCONI</h1>
+                <h1 class="main-title"><span class="thin">Benvenuto nel Sito del</span> PICCONE</h1>
             </div>
         </div>
     </div>
 
-    <div id = "pr" style = "font-family: -apple-system-footnote;">
-        <div style = "text-align: center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 45px; margin-top: 80px;" id = "app" class = "module.exports">
+    <div id = "pr" style = "font-family: -apple-system-footnote; margin-bottom: 20px;">
+        <div style = "text-align: center; font-size: 40px; margin-top: 75px;" id = "app" class = "module.exports">
             <script type = "text/javascript" src = "./jvscpt-1.js"></script>
         </div>
     </div>
 
-    <div class="loading-container" style = "margin-top: -140px;">
+    <div class="loading-container" style = "margin-top: -180px;">
         <img src="./piccone_3.jpg" id="loading-image">
     </div>
-      
 
-    <!--
-    <div class = "boxtesto" style = "margin-top: 300px;">
-        <div id = "span1" align = "center">
-            <ul>
-                <li class = "dropdown">
-                    <form action = "./index.2.html">
-                        <button type="button" class = "bottone" id = "pulsante" align = "center"></button>
-                    </form>
-                </li>
-            </ul>
+    <body>
+        <div class="content spacer" align = "center" style="font-size: 20px; font-weight: 300; margin-top: 25px;">   
+            <div class="fade-item" data-aos="fade-up">
+                <p class="p">
+                    Chi è stato? default: Cassola ovviamente
+                </p>
+            </div>
+                <div class="divider"></div>
+
+            <div class="fade-item" data-aos="fade-down">
+                <p class="p">
+                    Chi ha riso? Cassola ovviamente
+                </p>
+            </div>
+                <div class="divider"></div>
+        
+            <div class="fade-item" data-aos="fade-right">
+                <p class="p">
+                    Pregate conpicconauti... <br> 
+                    "Lalippa c' cred /o nun c' credi?"</p>
+                </p>
+            </div>
+                <div class="divider"></div>
+        
+            <div class="fade-item" data-aos="fade-left">
+                <p class="p">
+                    C' credi o nun c' credi?! 
+                </p>
+            </div>
+                <div class="divider"></div>
+
+            <div class="fade-item" data-aos="fade-up-right">
+                <p class="p">
+                    Ci credo prof! (porcopiccone)
+                </p>
+            </div>
+                <div class="divider"></div>
+
+            <div class="fade-item" data-aos="fade-up-left">
+                <p class="p">
+                    Vi metto il piccone Lunedì, martedì, giovedì, 
+                </p>
+            </div>
+                <div class="divider"></div>
+
+            <div class="fade-item" data-aos="fade-down-right">
+                <p class="p">
+                    [...] Venerdì verificuccia...<br>
+                    vedo già la lacrimuccia!
+                </p>
+            </div>
+                <div class="divider"></div>
+
+            <div class="fade-item" data-aos="fade-down-left">
+                <p class="p">
+                    Se si parla di Apostolippa...
+                </p>
+            </div>
+                <div class="divider"></div>
+
+            <div class="fade-item" data-aos="flip-left">
+                <p class="p">
+                    amore cortese...
+                </p>
+            </div>
+                <div class="divider"></div>
+
+            <div class="fade-item" data-aos="flip-right">
+                <p class="p">
+                    Jumpscare: "Muuuuti"!<br>
+                    [hihihihi..muutii!!]
+                </p>
+            </div>
+                <div class="divider"></div>
+
+            <div class="fade-item" data-aos="flip-up">
+                <p class="p">
+                    Lunedì: 
+                </p>
+            </div>
+                <div class="divider"></div>
+
+            <div class="fade-item" data-aos="flip-down">
+                <p class="p">
+                    Portate allo scoperto il Divino Piccone
+                </p>
+            </div>
+                <div class="divider"></div>
+
+            <div class="fade-item" data-aos="zoom-in">
+                <p class="p">
+                    " Domani vi ... "<br>
+                    " Interrogo, "
+                </p>
+            </div>
+                <div class="divider"></div>
+
+            <div class="fade-item" data-aos="zoom-in-up">
+                <p class="p">
+                    " vi metto il ... "<br>
+                    " Piccone, "
+                </p>
+            </div>
+                <div class="divider"></div>
+
+            <div class="fade-item" data-aos="zoom-in-down">
+                <p class="p">
+                    " e vi faccio ... "
+                </p>
+            </div>
+                <div class="divider"></div>
+
+            <div class="fade-item" data-aos="zoom-out">
+                <p class="p">
+                    "Piangere, as always."
+                </p>
+            </div>
+                <div class="divider"></div>
         </div>
-    </div>
+        
 
-    <div class = "boxtesto" style = "pointer-events:none; font-size: 24px; text-align: center; font-weight: 20px; font-family: Poppins; margin-top: 370px; right: -350px;">
-        <p>
-            ← clicca sul Piccone Sacro•
-        </p>
-    </div>
-    -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 
-    <div class = "table">
-        <center>
-            <table>
-                <caption class = "listaCommand">LISTA COMANDI 3IA</caption>
-                <div align = "left">
-                    <tbody style = "font-size: 21px; text-align: left;">
-                        <tr><th>Chi è stato?</th>                         <td>Cassola ovviamente</td> </tr>
-                        <tr><th>Chi ha riso?</th>                         <td>Cassola ovviamente</td> </tr>
-                        <tr><th>Pregate conpicconauti </th>               <td>"Lalippa c' cred /o nun c' credi?"</td> </tr>
-                        <tr><th>C' credi o nun c' credi?! </th>           <td>Ci credo prof!</td> </tr>
-                        <tr><th>Vi metto il piccone Lunedì, martedì,</th> <td>giovedì,</td> </tr>
-                        <tr><th>Venerdì verificuccia...</th>              <td>vedo già la lacrimuccia!</td></tr>
-                        <tr><th>Se si parla di Apostolippa...</th>        <td>amore cortese...</td></tr>
-                        <tr><th>Jumpscare: "Muuuuti"!</th>                <td>hihihihi..muutii</td></tr>
-                        <tr><th>Lunedì: </th>                             <td>Tira fuori il Divino Piccone</td></tr>
-                        <tr><th>"→Domani vi ...</th>                      <td>"Interrogo,"</td></tr>
-                        <tr><th>"vi metto il ... "</th>                   <td>"Piccone, "</td></tr>
-                        <tr><th>"e vi faccio ..."</th>                    <td>"Piangere, ovviamente."</td></tr>
-                    </tbody>
+        <style>
+            #footer {
+            background-color:black;
+            text-align:center;
+            padding:5px;
+            font-size: 12px;
+            margin-top: 45px;
+            margin-left: 0px;
+            color:white;
+            max-width: 2160px;
+            max-height: 40px;
+            @media only screen and (max-width:620px) {
+                /*smartphone*/
+                .options, .main, .course {
+                width:100%;
+                }
+            }   
+        }
+        </style>
+
+        <div id = "app" style = "text-align: center; margin-top: 185px; min-width: 300px;">
+            <center>
+                <h3 style = "font:bolder; color:#fafafa; font-family:-apple-system, BlinkMacSystemFont; font-size: 18px;">
+                    Slide:
+                </h3>
+                <div class ="container">
+                    <iframe src="https://onedrive.live.com/embed?cid=EF543BEEE53A42F9&amp;resid=EF543BEEE53A42F9%21210&amp;authkey=ANAeMmVtcS1Q0P4&amp;em=2&amp;wdAr=1.7777777777777777" width="1488px" height="825px" frameborder="0">
+                        Documento di <a target="_blank" href="https://office.com">Microsoft Office</a> incorporato, con tecnologia 
+                        <a target="_blank" href="https://office.com/webapps">Office</a>
+                    </iframe>
                 </div>
-            </table>
-        </center>
-    </div>
+            </center>
+        </div>
 
-    <!--footer con il piccone-->
-    <style>
-        #footer {
-          background-color:black;
-          text-align:center;
-          padding:5px;
-          font-size: 12px;
-          margin-top: 45px;
-          margin-left: 0px;
-          color:white;
-          max-width: 2160px;
-          max-height: 40px;
-        @media only screen and (max-width:620px) {
-            /*smartphone*/
-            .options, .main, .course {
-            width:100%;
-            }
-        }   
-    }
-    </style>
+        <br><br>
 
-    <div id = "app" style = "text-align: center; margin-top: 185px;">
         <center>
-            <h3 style = "font:bolder; color:#fafafa; font-family:-apple-system, BlinkMacSystemFont; font-size: 18px;">
-                Slide:
-            </h3>
-
-            <iframe src="https://onedrive.live.com/embed?cid=EF543BEEE53A42F9&amp;resid=EF543BEEE53A42F9%21210&amp;authkey=ANAeMmVtcS1Q0P4&amp;em=2&amp;wdAr=1.7777777777777777" width="1488px" height="825px" frameborder="0">
-                Documento di <a target="_blank" href="https://office.com">Microsoft Office</a> incorporato, con tecnologia 
-                <a target="_blank" href="https://office.com/webapps">Office</a>
-            </iframe>
+            <div id="footer">© 2022-ZIPPO107. My rights are all mine</div>
         </center>
-    </div>
-
-    <br><br>
-
-    <center>
-        <div id="footer">© 2022-ZIPPO107. My rights are all mine</div>
-    </center>
 
     </body>
 </html>
