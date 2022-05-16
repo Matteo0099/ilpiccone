@@ -1,29 +1,36 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
     <head>
-        <meta name = "viewport" content = "width=device-width, initial-scale=1.0, align-content: center">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, align-content: center">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
     </head>
 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css-1.css"/>
+        
+        <!--JVS TITOLO-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+        <script type="text/javascript" src="./jvscpt-3.js"></script>
+        <link rel="text/javascript" href="./jvscpt-1.js"/>
+        <link rel="stylesheet" href="./sfondo_1.scss"/>
+        
+        <!-- Back to top button -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script src=”https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js”></script>
+    
+
+    <!--stile generale-->
     <style>
         @font-face {
             font-family: "San Francisco";
             font-weight: 400;
             src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
         }
-    </style>
-
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel = "stylesheet" href = "./css-1.css"/>
-    <!--JVS TITOLO-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-    <script type="text/javascript" src="./jvscpt-3.js"></script>
-    <link rel = "text/javascript" href = "./jvscpt-1.js"/>
-    <link rel = "stylesheet" href = "./sfondo_1.scss"/>
-
-    <style>
         #pr {
             font-family: "San Francisco";
             font-weight: 400;
@@ -33,13 +40,36 @@
         }
 
         body {
-            background-color: #202023;
+            background-color: #202024;
             background-size: 70% 400%;
             background-repeat: no-repeat;
             color:#cccccc;
         }
     </style>
 
+    <!--script per il bottone-->
+    <script>
+        jQuery(document).ready(function() {
+        
+        var btn = $('#button');
+        
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+            } else {
+            btn.removeClass('show');
+            }
+        });
+        
+        btn.on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({scrollTop:0}, '300');
+        });
+        
+        });
+    </script>
+
+    <!--
     <div id="container demo">
         <div class="content">
             <div id="large-header" class="large-header">
@@ -47,26 +77,53 @@
                 <h1 class="main-title"><span class="thin">Benvenuto nel Sito del</span> PICCONE</h1>
             </div>
         </div>
-    </div>
+    </div>-->
 
-    <div id = "pr" style = "font-family: -apple-system-footnote; margin-bottom: 40px;">
-        <div style = "text-align: center; font-size: 42px; margin-top: 95px;" id = "app" class = "module.exports">
-            <script type = "text/javascript" src = "./jvscpt-1.js"></script>
+    <!--Bottone-->
+    <a id="button" class="show" style="pointer-events: all;">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+        </svg>
+    </a>
+
+    <h1>Benvenuto!</h1>
+
+    <br>
+
+    <div id="pr" style="margin-bottom: 30px;">
+        <div style="text-align: center; font-size: 42px; margin-top: 15px;" id="app" class="module.exports">
+            <script type="text/javascript" src="./jvscpt-1.js"></script>
         </div>
     </div>
 
+    <main class="d-flex align-items-center justify-content-center mt-5">
+        <div class="card mx-auto ms-5 me-5">
+          <div class="card-body">
+            <h1 align="center"class="titolo2">Presentazione "Crisi del 600"⛏️️</h1>
+            <div class = "testo4">
+                <p style="text-align: center;">gruppo: Manià, Mennella, Annunziata, Moratti.</p>
+            </div>
+            <p class="text-center fst-italic mb-4"class="titolo2">«E anche oggi, <br> 
+                il piccone lo prenderemo domani»
+            </p>
+            <div class="d-flex align-items-center mt-3 justify-content-center">
+              <a href="./Slide.html" class="btn btn-outline-dark w-50">Visualizza le Slide</a>
+            </div>
+          </div>
+        </div>
+      </main>
+
+    <!--
     <div class="loading-container" style = "margin-top: -175px;">
         <img src="./piccone_3.jpg" id="loading-image">
-    </div>
+    </div>-->
 
-    <div class="titolo_elenco" style="margin-top: 100px;">
-        <p>
-            Lista Comandi 3IA: 
-        </p>
+    <div class="titolo_elenco" style="margin-top: 650px;">
+        <p> Lista Comandi 3IA: </p>
     </div>
 
     <body>
-        <div class="content spacer" align = "center" style="font-size: 20px; font-weight: 300; margin-top: 25px;">   
+        <div class="content spacer" align = "center" style="font-size: 20px; font-weight: 300; margin-top: 30px;">   
             <div class="fade-item" data-aos="fade-up">
                 <p class="p">
                     Chi è stato? default: Cassola ovviamente
@@ -199,25 +256,17 @@
         }
         </style>
 
-        <div id = "app" style = "text-align: center; margin-top: 195px; margin-bottom: -20px;min-width: 400px; min-height: 300px;">
-            <center>
-                <h3 class="slide">
-                    Slide:
-                </h3>
-                <div class ="container">
-                    <iframe src="https://onedrive.live.com/embed?cid=EF543BEEE53A42F9&amp;resid=EF543BEEE53A42F9%21210&amp;authkey=ANAeMmVtcS1Q0P4&amp;em=2&amp;wdAr=1.7777777777777777" width="1490px" height="850px" frameborder="0">
-                        Documento di <a target="_blank" href="https://office.com">Microsoft Office</a> incorporato, con tecnologia 
-                        <a target="_blank" href="https://office.com/webapps">Office</a>
-                    </iframe>
-                </div>
-            </center>
-        </div>
-
+        <!--
+        <div class="d-flex align-items-center mt-3 justify-content-center">
+            <a href="#tornasu"  data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" class="btn btn-outline-dark w-50">Torna all'inizio</a>
+        </div>-->
+    
         <br><br>
 
         <center>
             <div id="footer" class="foot">©2022 - ZIPPO107. My rights are all mine</div>
         </center>
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>

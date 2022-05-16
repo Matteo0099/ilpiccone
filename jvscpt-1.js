@@ -5,11 +5,10 @@ var typewriter = new Typewriter(app, {
 });
       
   typewriter
-    .pauseFor(100)
-    .pauseFor(700)
+    .pauseFor(950)
     //.deleteChars(33)
     //.pauseFor(700)
-    .typeString("\nScorri in basso per visualizzare Il PowerPoint!⛏️")
+    .typeString("Sei nel sito del \"Piccone\"⛏️")
     .start();
 
 
