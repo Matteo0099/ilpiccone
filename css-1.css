@@ -1,30 +1,30 @@
-/* for device (mobile) */
-@charset "UTF-8";
+  /* for device (mobile) */
+  @charset "UTF-8";
 
-h1,h2,h3,h4,h5,h6,p,a {
-  -ms-word-wrap: break-word;
-  word-wrap: break-word;
-}
+  h1,h2,h3,h4,h5,h6,p,a {
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+  }
 
-head {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+  head {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
 
-h1{
-  font-size: 40px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+  h1{
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
 
 
-.container {
-  min-width: 30%;
-  min-height: 40%;
-  width: 100%;
-  height: 100%;
-}
+  .container {
+    min-width: 30%;
+    min-height: 40%;
+    width: 100%;
+    height: 100%;
+  }
 
 /*
 table, td, th {
@@ -54,10 +54,10 @@ tr:nth-child(2n+2) {
 }
 */
 
-caption {
-  font-weight:bold;
-  color: rgb(255, 255, 255)
-}
+  caption {
+    font-weight:bold;
+    color: rgb(255, 255, 255)
+  }
 /*
 table, td, th {
   border:1px solid rgb(155, 155, 155);
@@ -97,12 +97,11 @@ tr.odd td, tr.odd th {
 
   img#loading-image {
     image-rendering: optimizeQuality;
-    width: 300px;
-    height: 280px;
+    width: 320px;
+    height: 300px;
     animation-name: BlinkingImage;
-    animation-duration: 3s;
+    animation-duration: 4s;
     animation-direction:reverse;
-    animation-iteration-count:calc(3.2s);
   }
 
   @keyframes BlinkingImage {
@@ -115,85 +114,87 @@ tr.odd td, tr.odd th {
   }
 
 
-.crisp-edges{
-  image-rendering: -moz-crisp-edges;
-  image-rendering: crisp-edges;
-}
+  .crisp-edges{
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+  }
 
-body{
-  background-color:transparent;
-}
+  body{
+    background-color:transparent;
+  }
 
-ul{
-  list-style-type: none;
-  margin: 2px;
-  padding: 0;
-  overflow: hidden;
-  background-color: transparent;
-}
+  ul{
+    list-style-type: none;
+    margin: 2px;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+  }
 
-li {
-  float: center;
-}
+  li {
+    float: center;
+  }
 
-caption.listaCommand {
-  font-size: 25px;
-  text-align: center;
-  color: #fafafa;
-}
+  caption.listaCommand {
+    font-size: 25px;
+    text-align: center;
+    color: #fafafa;
+  }
 
-div.table {
-  color:#fafafa;
-  margin-top: 15px;
-}
+  div.table {
+    color:#fafafa;
+    margin-top: 15px;
+  }
 
-div.app {
-  max-width: 125%;
-  max-height: 125%;
-  margin-bottom: 10px;
-  margin-top: 80px;
-}
- 
+  h3 {
+    font-size: 20px;
+    color:#fafafa; 
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+  }
+  
 
-/*header*/
- .large-header {
-  min-width: 100%;
-  max-width: 100%;
-  width: 100%;
-  height: 120px;
-  position: relative;
-  background: #111;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center center;
-  z-index: 1;
-}
+  /*header*/
+  .large-header {
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+    height: 120px;
+    position: relative;
+    background: #111;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+  }
 
-.demo .large-header {
-  background-color: #0e0e0f;
-}
+  .demo .large-header {
+    background-color: #0e0e0f;
+  }
 
-.main-title {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  color: #fafafa;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate3d(-50%, -50%, 0);
-  transform: translate3d(-50%, -50%, 0);
-}
+  .main-title {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: #fafafa;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+  }
 
-.demo .main-title {
-  text-transform: uppercase;
-  font-size: 30px;
-  letter-spacing: 2.6px;
-}
+  .demo .main-title {
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 2.6px;
+  }
 
-.main-title .thin {
-  font-weight: 300;
-}
+  .main-title .thin {
+    color:#fafafa; 
+    font-weight: 300;
+  }
 
 /*resize*/
 @media only screen and (min-device-width : 468px) and (max-device-width : 1200px) {
@@ -206,55 +207,80 @@ div.app {
 	  width: 100%;
 	}
   .content {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
     margin-top: 20%;
     margin-bottom: 10%;
     margin: 0 2%;
     width: 96%;
   }
 }
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="content, pr, loading-container, divider, fade-item"] {
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="content, pr, loading-container, divider, fade-item"] {
+      width: 100%;
+    }
+  }
+
+
+  div.boxtesto {
+    position: absolute;
+    margin-top: 20px;
+    bottom: 5px;
+    top: 2px;
+    text-align: center;
+    align-items: middle;
     width: 100%;
   }
-}
 
+  span.testo {
+    padding: 0px;
+    color: #aeaeae;
+    letter-spacing: -1px;
+  }
 
-div.boxtesto {
-  position: absolute;
-  margin-top: 20px;
-  bottom: 5px;
-  top: 2px;
-  text-align: center;
-  align-items: middle;
-  width: 100%;
-}
+  /*spacer*/
+  .divider {
+    padding: 45px 0;
+  }
 
-span.testo {
-  padding: 0px;
-  color: #aeaeae;
-  letter-spacing: -1px;
-}
+  /**Global sttyle**/
+  .fade-item {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+    transition-delay: 0.8ms;
+    animation-delay: 0.15ms;
+    text-align: center;
+    min-width: 50%;
+    min-height: 35%;
+    margin-top: 22px;
+    margin-bottom: 28px;
+    width: 675px;
+    height: 300px;
+    background:#202746;
+    border: 12px solid #aeaeae;
+  }
 
-/*spacer*/
-.divider {
-  padding: 20px 0;
-}
+  .p {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+    margin-top: 14.5%; 
+    color: #d7dbf0;
+  }
+  .titolo_elenco{
+    margin-bottom: 80px;
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+    text-align: center;
+    font-size: 40px;
+  }
 
-/**Global sttyle**/
-.fade-item {
-  min-width: 50%;
-  min-height: 35%;
-  margin-top: 22px;
-  margin-bottom: 28px;
-  width: 675px;
-  height: 250px;
-  background:#202746;
-  border: 12px solid #aeaeae;
-}
-
-.p {
-  margin-top: 12%; 
-  color: #d7dbf0;
-}
-  
+  .foot {
+    font-size: 14px;
+    color: #fafafa;
+  }
+    

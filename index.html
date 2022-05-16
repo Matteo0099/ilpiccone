@@ -25,7 +25,10 @@
 
     <style>
         #pr {
-            text-shadow: 2px 2px 5px rgb(155, 155, 155);
+            font-family: "San Francisco";
+            font-weight: 400;
+            src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+            text-shadow: 1px 1px 3px #fafafa;
             text-align: center;
         }
 
@@ -34,12 +37,6 @@
             background-size: 70% 400%;
             background-repeat: no-repeat;
             color:#cccccc;
-        }
-        
-        .titolo1{
-            text-align: center;
-            font-size: 45px;
-            text-rendering: optimizeLegibility;
         }
     </style>
 
@@ -52,14 +49,20 @@
         </div>
     </div>
 
-    <div id = "pr" style = "font-family: -apple-system-footnote; margin-bottom: 20px;">
-        <div style = "text-align: center; font-size: 40px; margin-top: 75px;" id = "app" class = "module.exports">
+    <div id = "pr" style = "font-family: -apple-system-footnote; margin-bottom: 40px;">
+        <div style = "text-align: center; font-size: 42px; margin-top: 95px;" id = "app" class = "module.exports">
             <script type = "text/javascript" src = "./jvscpt-1.js"></script>
         </div>
     </div>
 
-    <div class="loading-container" style = "margin-top: -180px;">
+    <div class="loading-container" style = "margin-top: -175px;">
         <img src="./piccone_3.jpg" id="loading-image">
+    </div>
+
+    <div class="titolo_elenco" style="margin-top: 100px;">
+        <p>
+            Lista Comandi 3IA: 
+        </p>
     </div>
 
     <body>
@@ -117,14 +120,8 @@
 
             <div class="fade-item" data-aos="fade-down-left">
                 <p class="p">
-                    Se si parla di Apostolippa...
-                </p>
-            </div>
-                <div class="divider"></div>
-
-            <div class="fade-item" data-aos="flip-left">
-                <p class="p">
-                    amore cortese...
+                    Se si parlasse di Apostolippa...<br>
+                    ...Amore Cortese
                 </p>
             </div>
                 <div class="divider"></div>
@@ -139,14 +136,7 @@
 
             <div class="fade-item" data-aos="flip-up">
                 <p class="p">
-                    Lunedì: 
-                </p>
-            </div>
-                <div class="divider"></div>
-
-            <div class="fade-item" data-aos="flip-down">
-                <p class="p">
-                    Portate allo scoperto il Divino Piccone
+                    Lunedì: portate il Divino Piccone!
                 </p>
             </div>
                 <div class="divider"></div>
@@ -182,12 +172,13 @@
                 <div class="divider"></div>
         </div>
         
-
+        <!--Libreria JS per il scrolling e animazioni-->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
         </script>
 
+        <!--Stile per il footer-->
         <style>
             #footer {
             background-color:black;
@@ -208,13 +199,13 @@
         }
         </style>
 
-        <div id = "app" style = "text-align: center; margin-top: 185px; min-width: 300px;">
+        <div id = "app" style = "text-align: center; margin-top: 195px; margin-bottom: -20px;min-width: 400px; min-height: 300px;">
             <center>
-                <h3 style = "font:bolder; color:#fafafa; font-family:-apple-system, BlinkMacSystemFont; font-size: 18px;">
+                <h3 class="slide">
                     Slide:
                 </h3>
                 <div class ="container">
-                    <iframe src="https://onedrive.live.com/embed?cid=EF543BEEE53A42F9&amp;resid=EF543BEEE53A42F9%21210&amp;authkey=ANAeMmVtcS1Q0P4&amp;em=2&amp;wdAr=1.7777777777777777" width="1488px" height="825px" frameborder="0">
+                    <iframe src="https://onedrive.live.com/embed?cid=EF543BEEE53A42F9&amp;resid=EF543BEEE53A42F9%21210&amp;authkey=ANAeMmVtcS1Q0P4&amp;em=2&amp;wdAr=1.7777777777777777" width="1490px" height="850px" frameborder="0">
                         Documento di <a target="_blank" href="https://office.com">Microsoft Office</a> incorporato, con tecnologia 
                         <a target="_blank" href="https://office.com/webapps">Office</a>
                     </iframe>
@@ -225,7 +216,7 @@
         <br><br>
 
         <center>
-            <div id="footer">© 2022-ZIPPO107. My rights are all mine</div>
+            <div id="footer" class="foot">©2022 - ZIPPO107. My rights are all mine</div>
         </center>
 
     </body>
