@@ -14,6 +14,7 @@
   }
 
   .card-body{
+    margin: auto;
     background-color: #3c4043;
   }
 
@@ -77,6 +78,10 @@
     height: 100%;
   }
 
+  .show {
+    color: #ffb820;
+  }
+
   /******bottone******/
   #button.show {
     opacity: 1;
@@ -85,8 +90,12 @@
   #button {
     display: inline-block;
     background-color: #ffb820;
+    min-width: 25px;
+    min-height: 25px;
     width: 50px;
     height: 50px;
+    max-width: 50px;
+    max-height: 50px;
     text-align: center;
     border-radius: 8px;
     margin: 30px;
@@ -108,7 +117,7 @@
     font-style: normal;
     font-size: 2em;
     line-height: 50px;
-    color: #fff;
+    color: #333;
   }
   #button {
     margin: 30px;
@@ -127,56 +136,12 @@
     background-color:#ffb820;
   }
 
-/*
-table, td, th {
-  border:1px solid rgb(223, 223, 223);
-  border-collapse:collapse
+
+caption {
+  font-weight:bold;
+  color: rgb(255, 255, 255)
 }
 
-td, th {
-  padding:3px 5px
-}
-
-th {
-  text-align: left
-}
-
-tr.odd td, tr.odd th {
-  color: #e5e5e5;
-  background-color:#aeaeae
-}
-
-tr:nth-child(2n+1) {
-  background-color:#333;  /**qua**/
-/*}
-
-tr:nth-child(2n+2) {
-  background-color: #202024;
-}
-*/
-
-  caption {
-    font-weight:bold;
-    color: rgb(255, 255, 255)
-  }
-/*
-table, td, th {
-  border:1px solid rgb(155, 155, 155);
-  border-collapse:collapse
-}
-
-td {
-  text-align:right
-} 
-
-th {
-  text-align:left
-}
-
-tr.odd td, tr.odd th {
-  background-color:#b8b8b8;
-}
-*/
 
 /*IMMAGINE*/
   .image{
@@ -213,7 +178,6 @@ tr.odd td, tr.odd th {
       opacity: 0;
     }
   }
-
 
   .crisp-edges{
     image-rendering: -moz-crisp-edges;
@@ -346,7 +310,6 @@ tr.odd td, tr.odd th {
       width: 100%;
     }
   }
-
 
   div.boxtesto {
     position: absolute;
