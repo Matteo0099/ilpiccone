@@ -15,7 +15,7 @@
 
   .card-body{
     margin: auto;
-    background-color: #3c4043;
+    background-color: #3c4043; /*sfondo main*/
   }
 
   .slide2{
@@ -40,17 +40,6 @@
     padding-right: 6%;
   }
 
-  .titoloFino {
-    margin-top: 1.2%;
-    margin-bottom: -20px;
-    /*color: #000; /* Fallback for older browsers */
-    /*color: rgba(0, 0, 0, 0.5);*/
-    color:#f3f3f3;
-    text-align:center;
-    font-size: 32px;
-    font-family: "San Francisco";
-    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
-  }
 
   .titolo2 {
     font-size: 40px;
@@ -81,6 +70,7 @@
   .show {
     color: #ffb820;
   }
+
 
   /******bottone******/
   #button.show {
@@ -137,13 +127,13 @@
   }
 
 
-caption {
-  font-weight:bold;
-  color: rgb(255, 255, 255)
-}
+  caption {
+    font-weight:bold;
+    color: rgb(255, 255, 255)
+  }
 
 
-/*IMMAGINE*/
+  /*IMMAGINE*/
   .image{
     image-rendering: optimizeSpeed;
   }
@@ -284,26 +274,26 @@ caption {
     font-weight: 300;
   }
 
-/*resize*/
-@media only screen and (min-device-width : 468px) and (max-device-width : 1200px) {
-	body {
-    min-height: 50%;
-    min-width: 50%;
-    margin-top: 20%;
-    margin-bottom: 10%;
-	  background: #202023;
-	  width: 100%;
-	}
-  .content {
-    font-family: "San Francisco";
-    font-weight: 400;
-    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
-    margin-top: 20%;
-    margin-bottom: 10%;
-    margin: 0 2%;
-    width: 96%;
+  /*resize*/
+  @media only screen and (min-device-width : 468px) and (max-device-width : 1200px) {
+    body {
+      min-height: 50%;
+      min-width: 50%;
+      margin-top: 20%;
+      margin-bottom: 10%;
+      background: #202023;
+      width: 100%;
+    }
+    .content {
+      font-family: "San Francisco";
+      font-weight: 400;
+      src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+      margin-top: 20%;
+      margin-bottom: 10%;
+      margin: 0 2%;
+      width: 96%;
+    }
   }
-}
   @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     [class*="content, pr, loading-container, divider, fade-item"] {
@@ -323,7 +313,7 @@ caption {
 
   span.testo {
     padding: 0px;
-    color: #acb1b6;
+    color: #888888;
     letter-spacing: -1px;
   }
 
@@ -353,11 +343,12 @@ caption {
   }
 
   .p {
+    font-size: 25px;
     font-family: "San Francisco";
     font-weight: 400;
     src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
     text-align: center;
-    margin-top: 11%;
+    margin-top: 12%;
     margin-bottom: 5%;
     color: #d7dbf0;
   }
@@ -374,5 +365,6 @@ caption {
     font-size: 14px;
     color: #fafafa;
   }
+
 
 /*************FINE PICCONIERI****************/
