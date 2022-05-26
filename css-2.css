@@ -11,7 +11,7 @@ body, html{
   overflow-X: hidden;
 }
 
-#i1, #i2, #i3, #i4, #i5, #i6, #i7, #i8, #i9, #i10, #i11, #i12, #i13, #i14, #i15, #i16, #i17, #i18, #i19, #i20, #i21, #i22, #i23, #i24{ 
+#i1, #i2, #i3, #i4, #i5, #i6, #i7, #i8, #i9, #i10, #i11, #i12, #i13, #i14, #i15, #i16, #i17, #i18, #i19, #i20, #i21, #i22, #i23, #i24, #i25{ 
   display: none;
 }
 
@@ -138,7 +138,8 @@ label span{
   #i21:checked ~ #twentyone,
   #i22:checked ~ #twentytwo,
   #i23:checked ~ #twentythree,
-  #i24:checked ~ #twentyfour 
+  #i24:checked ~ #twentyfour,
+  #i25:checked ~ #twentyfive
 
   {z-index: 9; animation: scroll 0.8s ease-in-out;}
 
@@ -165,7 +166,8 @@ label span{
   #i21:checked ~ #nav_slide #dot21,
   #i22:checked ~ #nav_slide #dot22,
   #i23:checked ~ #nav_slide #dot23,
-  #i24:checked ~ #nav_slide #dot24
+  #i24:checked ~ #nav_slide #dot24,
+  #i25:checked ~ #nav_slide #dot25
 
   { background-color: rgba(255,255,255,.9);}
 
