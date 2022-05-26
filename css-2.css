@@ -11,7 +11,7 @@ body, html{
   overflow-X: hidden;
 }
 
-#i1, #i2, #i3, #i4, #i5, #i6, #i7, #i8, #i9, #i10, #i11, #i12, #i13, #i14, #i15, #i16, #i17, #i18, #i19, #i20, #i21, #i22{ 
+#i1, #i2, #i3, #i4, #i5, #i6, #i7, #i8, #i9, #i10, #i11, #i12, #i13, #i14, #i15, #i16, #i17, #i18, #i19, #i20, #i21, #i22, #i23, #i24{ 
   display: none;
 }
 
@@ -115,36 +115,38 @@ label span{
 }
 
 .slide_img{z-index: -1;}
-  #i1:checked ~ #one  ,
-  #i2:checked ~ #two  ,
+  #i1:checked ~ #one,
+  #i2:checked ~ #two,
   #i3:checked ~ #three,
-  #i4:checked ~ #four ,
-  #i5:checked ~ #five ,
-  #i6:checked ~ #six ,
-  #i7:checked ~ #seven ,
-  #i8:checked ~ #eight ,
-  #i9:checked ~ #nine ,
-  #i10:checked ~ #ten ,
-  #i11:checked ~ #eleven ,
-  #i12:checked ~ #twelve ,
-  #i13:checked ~ #thirteen ,
-  #i14:checked ~ #fourteen ,
-  #i15:checked ~ #fiveteen ,
-  #i16:checked ~ #sixteen ,
-  #i17:checked ~ #seventeen ,
-  #i18:checked ~ #eighteen ,
-  #i19:checked ~ #nineteen ,
-  #i20:checked ~ #twenty ,
-  #i21:checked ~ #twentyone ,
-  #i22:checked ~ #twentytwo 
+  #i4:checked ~ #four,
+  #i5:checked ~ #five,
+  #i6:checked ~ #six,
+  #i7:checked ~ #seven,
+  #i8:checked ~ #eight,
+  #i9:checked ~ #nine,
+  #i10:checked ~ #ten,
+  #i11:checked ~ #eleven,
+  #i12:checked ~ #twelve,
+  #i13:checked ~ #thirteen,
+  #i14:checked ~ #fourteen,
+  #i15:checked ~ #fiveteen,
+  #i16:checked ~ #sixteen,
+  #i17:checked ~ #seventeen,
+  #i18:checked ~ #eighteen,
+  #i19:checked ~ #nineteen,
+  #i20:checked ~ #twenty,
+  #i21:checked ~ #twentyone,
+  #i22:checked ~ #twentytwo,
+  #i23:checked ~ #twentythree,
+  #i24:checked ~ #twentyfour 
 
   {z-index: 9; animation: scroll 0.8s ease-in-out;}
 
-  #i1:checked  ~  #nav_slide #dot1,
-  #i2:checked  ~  #nav_slide #dot2,
-  #i3:checked  ~  #nav_slide #dot3,
-  #i4:checked  ~  #nav_slide #dot4,
-  #i5:checked  ~  #nav_slide #dot5,
+  #i1:checked ~ #nav_slide #dot1,
+  #i2:checked ~ #nav_slide #dot2,
+  #i3:checked ~ #nav_slide #dot3,
+  #i4:checked ~ #nav_slide #dot4,
+  #i5:checked ~ #nav_slide #dot5,
   #i6:checked ~ #nav_slide #dot6,
   #i7:checked ~ #nav_slide #dot7,
   #i8:checked ~ #nav_slide #dot8,
@@ -161,7 +163,9 @@ label span{
   #i19:checked ~ #nav_slide #dot19,
   #i20:checked ~ #nav_slide #dot20, 
   #i21:checked ~ #nav_slide #dot21,
-  #i22:checked ~ #nav_slide #dot22
+  #i22:checked ~ #nav_slide #dot22,
+  #i23:checked ~ #nav_slide #dot23,
+  #i24:checked ~ #nav_slide #dot24
 
   { background-color: rgba(255,255,255,.9);}
 
