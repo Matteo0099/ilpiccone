@@ -20,7 +20,7 @@ html {
 }
 
 .titoloFino {
-  margin-top: 1.2%;
+  margin-top: 4%;
   margin-bottom: -20px;
   /*color: #000; /* Fallback for older browsers */
   /*color: rgba(0, 0, 0, 0.5);*/
@@ -31,13 +31,39 @@ html {
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
 }
 
+.backto {
+  text-indent: 3% 3% 3% 3%;
+  width: 120px;
+  height: 25px;
+  display: block;
+  /*padding testo*/
+  padding-top: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 10px;
+  text-align: center;
+  line-height: 1em;
+  /*fontss*/
+  color: #111;
+  text-align: center;
+  font-size: 16px;
+  font-family: "San Francisco";
+  font-weight: 600;
+  font-variant-ligatures: historical-ligatures;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+h2 {
+  font: 400;
+}
+
 .container{
   margin: 0 auto;
   margin-top: 50px;
   position: relative;
-  width: 80%;
+  width: 100%;
   height: 0;
-  padding-bottom: 40%;
+  padding-bottom: 41%;
   user-select: none;
   background-color: #1c1c1c;
   border: solid 6px #616161;

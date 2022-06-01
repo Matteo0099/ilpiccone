@@ -9,11 +9,26 @@
     word-wrap: break-word;
   }
 
+  html,body,.container { 
+    width: 100%;
+    height: 100%; 
+    margin: 0; 
+    padding: 0; 
+    background-repeat: no-repeat;
+    background-position-y: center;
+  }
+
+  body {
+    background-color:#202024;
+  }
+
   main {
     padding-top: 8.0%;    /*main riquadro, tailwind css+js*/
   }
 
   .card-body{
+    width: 750px;
+    height: 300px;
     margin: auto;
     background-color: #3c4043; /*sfondo main*/
   }
@@ -124,6 +139,13 @@
 
   .btn-outline-dark{
     background-color:#ffb820;
+    padding: 2% 2% 2% 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 1.0%;
+    font-size: 18px;
+    font: 800;
+    font-style:normal;
   }
 
 
@@ -220,12 +242,24 @@
   }
 
   .backto {
+    text-indent: 3% 3% 3% 3%;
     width: 120px;
-    height: 14px;
+    height: 25px;
+    display: block;
+    /*padding testo*/
+    padding-top: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 10px;
     text-align: center;
-    font-size: 18px;
+    line-height: 1em;
+    /*fontss*/
+    color: #111;
+    text-align: center;
+    font-size: 16px;
     font-family: "San Francisco";
-    font-weight: 400;
+    font-weight: 600;
+    font-variant-ligatures: historical-ligatures;
     src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
   }
 
@@ -240,16 +274,13 @@
     overflow: hidden;
     background-size: cover;
     background-position: center center;
-    z-index: 1;
+    /*z-index: 1;*/
   }
 
   .demo .large-header {
     background-color: #111;
   }
 
-  .footer {
-    background-color: #111;
-  }
 
   .main-title {
     position: absolute;
@@ -362,9 +393,9 @@
   }
 
   .foot {
-    font-size: 14px;
+    margin-top: auto;
+    font-size: 13px;
     color: #fafafa;
   }
-
 
 /*************FINE PICCONIERI****************/
